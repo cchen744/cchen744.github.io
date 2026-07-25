@@ -118,7 +118,9 @@
         </article>
 
         <article class="card">
-          <div class="card-thumb placeholder"><span>k-means clusters, NYC</span></div>
+          <div class="card-thumb">
+            <img src="images/geospatial_clustering_nyc.png" alt="K-means clusters of geotagged photo locations across New York City, colored by cluster">
+          </div>
           <div class="card-body">
             <p class="kicker">K-means from scratch</p>
             <h3>Geospatial Clustering &amp; Vector Analysis</h3>
@@ -133,7 +135,14 @@
         </article>
 
         <article class="card">
-          <div class="card-thumb placeholder"><span>geocoded listings map</span></div>
+          <div class="card-thumb flow" aria-hidden="true">
+            <ol>
+              <li>scrape listing HTML</li>
+              <li>parse JSON-LD address</li>
+              <li>geocode → (lat, lon)</li>
+              <li>export CSV + photos</li>
+            </ol>
+          </div>
           <div class="card-body">
             <p class="kicker">Scraper · Geocoding</p>
             <h3>Real-Estate Data Collection Pipeline</h3>
@@ -143,7 +152,7 @@
             <div class="tags">
               <span>Python</span><span>requests</span><span>BeautifulSoup</span><span>pandas</span>
             </div>
-            <a class="card-link" href="https://github.com/cchen744/real-estate-scraper" target="_blank" rel="noopener">View repo →</a>
+            <a class="card-link" href="https://github.com/cchen744/GeoHood" target="_blank" rel="noopener">View repo →</a>
           </div>
         </article>
 

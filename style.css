@@ -226,6 +226,47 @@ section h2 .num,
 .card-thumb.placeholder {
   background: repeating-linear-gradient(135deg, #E4E8E3 0 9px, #DAE0D9 9px 18px);
 }
+.card-thumb.flow {
+  background:
+    radial-gradient(130% 100% at 100% 0%, var(--tint) 0%, transparent 58%),
+    linear-gradient(155deg, #F1F5F0, #E7EEE5);
+  place-items: center;
+}
+.card-thumb.flow ol {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 20px;
+}
+.card-thumb.flow li {
+  position: relative;
+  padding-left: 18px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  color: var(--text-soft);
+  white-space: nowrap;
+}
+.card-thumb.flow li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 7px;
+  height: 7px;
+  border-radius: 2px;
+  background: var(--lime);
+}
+.card-thumb.flow li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 12px;
+  width: 1px;
+  height: 10px;
+  background: var(--line);
+}
 .card-thumb.placeholder span {
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 11.5px;
