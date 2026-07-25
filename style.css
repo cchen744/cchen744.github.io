@@ -211,6 +211,17 @@ section h2 .num,
   display: grid;
   place-items: center;
 }
+.card-feature .card-thumb.stack {
+  grid-template-rows: 1fr 1fr;
+  gap: 8px;
+  place-items: stretch;
+}
+.card-feature .card-thumb.stack img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
 .card-thumb img { width: 100%; height: 100%; object-fit: cover; }
 .card-thumb.placeholder {
   background: repeating-linear-gradient(135deg, #E4E8E3 0 9px, #DAE0D9 9px 18px);
