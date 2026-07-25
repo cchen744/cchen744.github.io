@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nora Chen — Geospatial Data Science</title>
+<meta name="description" content="Portfolio of geospatial data science projects by Nora Chen — spatial statistics, network analysis, remote sensing, and clustering in Python.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500&family=Figtree:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand">NC<span class="dot">·</span></a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <span class="blob blob-lg" aria-hidden="true"></span>
+    <span class="blob blob-sm" aria-hidden="true"></span>
+    <div class="hero-inner">
+      <p class="kicker">lat, lon → insight</p>
+      <h1>Nora Chen</h1>
+      <p class="hero-tagline">Geospatial Data Science</p>
+      <p class="hero-sub">B.S. Data Science, University of Wisconsin–Madison. I build Python
+        tools that turn spatial data — election wards, street networks, satellite imagery,
+        real-estate listings — into maps, models, and measurable findings.</p>
+      <div class="hero-links">
+        <a class="btn btn-primary" href="#projects">View Projects</a>
+        <a class="btn btn-ghost" href="https://github.com/cchen744" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/nora-chen-4711a330b/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+
+    <section id="about" class="about">
+      <div class="section-mark"><span class="num">01</span><span class="label">About</span></div>
+      <p>
+        I'm an undergraduate Data Science student at UW–Madison with a focus on geospatial
+        analysis — the intersection of statistics, geometry, and geography. My work spans
+        spatial statistics (Moran's I, LISA, GWR), graph-based street network analysis,
+        satellite remote sensing, and building spatial algorithms from scratch rather than
+        only calling library functions. I'm most interested in projects where the data has
+        real coordinates and the output is a map someone can act on.
+      </p>
+    </section>
+
+    <hr class="rule">
+
+    <section id="projects" class="projects">
+      <h2><span class="num">02</span>Projects</h2>
+
+      <article class="card card-feature">
+        <div class="card-body">
+          <p class="kicker">Moran's I · LISA · GWR</p>
+          <h3>Spatial Statistics Toolkit</h3>
+          <p>Global &amp; local spatial autocorrelation and geographically weighted
+            regression on real election and Airbnb data. Moran's I ≈ <span class="figure">0.48</span>
+            on Dane County wasted-vote ratios; GWR on Austin listing prices reaches
+            R² ≈ <span class="figure">0.89</span>.</p>
+          <div class="tags">
+            <span>Python</span><span>PySAL</span><span>esda</span><span>mgwr</span><span>GeoPandas</span>
+          </div>
+          <a class="card-link" href="https://github.com/cchen744/spatial-statistics-toolkit" target="_blank" rel="noopener">View repo →</a>
+        </div>
+        <div class="card-thumb placeholder">
+          <span>LISA cluster map<br>1200×900</span>
+        </div>
+      </article>
+
+      <div class="project-grid">
+
+        <article class="card">
+          <div class="card-thumb placeholder"><span>street network graph</span></div>
+          <div class="card-body">
+            <p class="kicker">OSMnx · NetworkX</p>
+            <h3>Urban Street Network Analysis</h3>
+            <p>Graph-based analysis of real street networks pulled live from OpenStreetMap.
+              Degree, closeness, and betweenness centrality on the line graph, plus
+              shortest-path routing — applied to Madison, UW campus, and La Fortuna, Costa Rica.</p>
+            <div class="tags">
+              <span>Python</span><span>OSMnx</span><span>NetworkX</span><span>GeoPandas</span><span>matplotlib</span>
+            </div>
+            <a class="card-link" href="https://github.com/cchen744/urban-street-network-analysis" target="_blank" rel="noopener">View repo →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-thumb">
+            <img src="images/landsat-timelapse.gif" alt="Multi-year Landsat timelapse of Dane County, Wisconsin">
+          </div>
+          <div class="card-body">
+            <p class="kicker">Earth Engine · geemap</p>
+            <h3>Satellite Land-Cover Change</h3>
+            <p>Remote-sensing analysis of Dane County, WI using Google Earth Engine.
+              Dynamic World composites (2016 vs 2022) with zonal statistics, NDVI from
+              Landsat 8, and an animated multi-year Landsat timelapse.</p>
+            <div class="tags">
+              <span>Python</span><span>Google Earth Engine</span><span>geemap</span><span>Landsat</span>
+            </div>
+            <a class="card-link" href="https://github.com/cchen744/satellite-landcover-change" target="_blank" rel="noopener">View repo →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-thumb placeholder"><span>k-means clusters, NYC</span></div>
+          <div class="card-body">
+            <p class="kicker">K-means from scratch</p>
+            <h3>Geospatial Clustering &amp; Vector Analysis</h3>
+            <p>K-means implemented from scratch — no scikit-learn — run on geotagged NYC
+              photo locations, plus polygon area/centroid/bounding-envelope math derived
+              directly from coordinate geometry.</p>
+            <div class="tags">
+              <span>Python</span><span>NumPy</span><span>Shapely</span><span>GeoPandas</span>
+            </div>
+            <a class="card-link" href="https://github.com/cchen744/geospatial-clustering-from-scratch" target="_blank" rel="noopener">View repo →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-thumb placeholder"><span>geocoded listings map</span></div>
+          <div class="card-body">
+            <p class="kicker">Scraper · Geocoding</p>
+            <h3>Real-Estate Data Collection Pipeline</h3>
+            <p>Object-oriented pipeline that scrapes listings, parses JSON-LD address data,
+              geocodes to coordinates, and pulls nearby geotagged photos — with an offline
+              HTML snapshot so results stay reproducible.</p>
+            <div class="tags">
+              <span>Python</span><span>requests</span><span>BeautifulSoup</span><span>pandas</span>
+            </div>
+            <a class="card-link" href="https://github.com/cchen744/real-estate-scraper" target="_blank" rel="noopener">View repo →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <hr class="rule">
+
+    <section id="skills" class="skills">
+      <h2><span class="num">03</span>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h4>Languages</h4>
+          <p>Python · SQL</p>
+        </div>
+        <div class="skill-group">
+          <h4>Geospatial</h4>
+          <p>GeoPandas · Shapely · PySAL · esda · mgwr · OSMnx · NetworkX · Google Earth Engine · geemap</p>
+        </div>
+        <div class="skill-group">
+          <h4>Data &amp; Web</h4>
+          <p>pandas · NumPy · requests · BeautifulSoup · Jupyter · matplotlib</p>
+        </div>
+        <div class="skill-group">
+          <h4>Methods</h4>
+          <p>Spatial autocorrelation (Moran's I, LISA) · GWR · graph centrality ·
+            clustering · remote sensing (NDVI, land-cover change) · web scraping &amp; geocoding</p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="rule">
+
+    <section id="contact" class="contact">
+      <h2><span class="num">04</span>Contact</h2>
+      <p>Open to internships and research collaborations in geospatial data science.</p>
+      <div class="contact-links">
+        <a class="btn btn-primary" href="mailto:cchen744@wisc.edu">cchen744@wisc.edu</a>
+        <a class="btn btn-ghost" href="https://github.com/cchen744" target="_blank" rel="noopener">github.com/cchen744</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/nora-chen-4711a330b/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <p>Built with Python &amp; geospatial data. © 2026 Nora Chen.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
