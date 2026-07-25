@@ -15,6 +15,8 @@
 
 set -e
 
+cd "$(dirname "$0")"
+
 USER="cchen744"
 REPO="cchen744.github.io"
 
