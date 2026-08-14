@@ -31,8 +31,13 @@
     <span class="blob blob-sm" aria-hidden="true"></span>
     <div class="hero-inner">
       <p class="kicker">lat, lon → insight</p>
-      <h1>Nora Chen</h1>
-      <p class="hero-tagline">Geospatial Data Science</p>
+      <div class="hero-id">
+        <img class="avatar" src="images/nora-profile.jpg" alt="Nora Chen">
+        <div>
+          <h1>Nora Chen</h1>
+          <p class="hero-tagline">Geospatial Data Science</p>
+        </div>
+      </div>
       <p class="hero-sub">B.S. Data Science, University of Wisconsin–Madison. I build Python
         tools that turn spatial data — election wards, street networks, satellite imagery,
         real-estate listings — into maps, models, and measurable findings.</p>
@@ -49,11 +54,12 @@
     <section id="about" class="about">
       <div class="section-mark"><span class="num">01</span><span class="label">About</span></div>
       <p>
-        Welcome to my world of maps. I'm currently a graduate student in Applied Statistics and Data Science at Cornell University.
-
-        I earned a B.S. in Data Science from the University of Wisconsin–Madison, along with a certificate in Geospatial Data Science—the intersection of statistics, geometry, and geography. My work spans spatial statistics (Moran's I, LISA, and GWR), graph-based street network analysis, satellite remote sensing, and implementing spatial algorithms beyond simply relying on existing libraries.
-
-        I'm most interested in projects where data has real-world coordinates and the result is a map that helps people understand, decide, and act.
+        I'm an undergraduate Data Science student at UW–Madison with a focus on geospatial
+        analysis — the intersection of statistics, geometry, and geography. My work spans
+        spatial statistics (Moran's I, LISA, GWR), graph-based street network analysis,
+        satellite remote sensing, and building spatial algorithms from scratch rather than
+        only calling library functions. I'm most interested in projects where the data has
+        real coordinates and the output is a map someone can act on.
       </p>
     </section>
 
@@ -64,24 +70,46 @@
 
       <article class="card card-feature">
         <div class="card-body">
-          <p class="kicker">Moran's I · LISA · GWR</p>
-          <h3>Spatial Statistics Toolkit</h3>
-          <p>Global &amp; local spatial autocorrelation and geographically weighted
-            regression on real election and Airbnb data. Moran's I ≈ <span class="figure">0.48</span>
-            on Dane County wasted-vote ratios; GWR on Austin listing prices reaches
-            R² ≈ <span class="figure">0.89</span>.</p>
+          <p class="kicker">Pinned · Editorial Cartography</p>
+          <h3>Heat on Foot: Mapping Pedestrian Heat Exposure in Madison, WI</h3>
+          <p>An editorial data-cartography poster following three Madison walkers through
+            extreme heat — a teenager along Allied Drive, an elderly resident walking to a bus
+            stop through Bram's Addition, and a college student climbing Bascom Hill to class.
+            It pairs Landsat 8/9 land surface temperature (30m) with tree-canopy shade coverage
+            along each route, visualized as parallel journey profiles alongside a styled strip
+            map. Extreme-heat days were independently defined using PRISM climate data
+            (90th-percentile summer Tmax) to avoid circularity with the LST-based surface urban
+            heat island analysis. Built in a Reuters/NYT-style editorial aesthetic — muted
+            linework, warm heat gradients, and watercolor-textured vegetation over a Nolli-map base.</p>
           <div class="tags">
-            <span>Python</span><span>PySAL</span><span>esda</span><span>mgwr</span><span>GeoPandas</span>
+            <span>Python</span><span>Google Earth Engine</span><span>ArcGIS Pro</span><span>Illustrator / Figma</span><span>Cartography</span>
           </div>
-          <a class="card-link" href="https://github.com/cchen744/spatial-statistics-toolkit" target="_blank" rel="noopener">View repo →</a>
+          <a class="card-link" href="poster/heat-on-foot.pdf" target="_blank" rel="noopener">View full poster (PDF) →</a>
         </div>
-        <div class="card-thumb stack">
-          <img src="images/spatial_statistics_lisa_hotspots.png" alt="Local Moran's I (LISA) hot spot and cold spot map of wasted-vote ratios in Dane County, Wisconsin">
-          <img src="images/spatial_statistics_gwr.png" alt="Geographically weighted regression coefficient maps for Austin Airbnb prices — local R², bedrooms, and review score">
+        <div class="card-thumb">
+          <img src="images/heat-on-foot-thumb.jpg" alt="Walking the Heat — editorial cartography poster mapping pedestrian heat exposure along three walking routes in Madison, Wisconsin">
         </div>
       </article>
 
       <div class="project-grid">
+
+        <article class="card">
+          <div class="card-thumb">
+            <img src="images/spatial_statistics_lisa_hotspots.png" alt="Local Moran's I (LISA) hot spot and cold spot map of wasted-vote ratios in Dane County, Wisconsin">
+          </div>
+          <div class="card-body">
+            <p class="kicker">Moran's I · LISA · GWR</p>
+            <h3>Spatial Statistics Toolkit</h3>
+            <p>Global &amp; local spatial autocorrelation and geographically weighted
+              regression on real election and Airbnb data. Moran's I ≈ <span class="figure">0.48</span>
+              on Dane County wasted-vote ratios; GWR on Austin listing prices reaches
+              R² ≈ <span class="figure">0.89</span>.</p>
+            <div class="tags">
+              <span>Python</span><span>PySAL</span><span>esda</span><span>mgwr</span><span>GeoPandas</span>
+            </div>
+            <a class="card-link" href="https://github.com/cchen744/spatial-statistics-toolkit" target="_blank" rel="noopener">View repo →</a>
+          </div>
+        </article>
 
         <article class="card">
           <div class="card-thumb">
@@ -191,7 +219,7 @@
       <h2><span class="num">04</span>Contact</h2>
       <p>Open to internships and research collaborations in geospatial data science.</p>
       <div class="contact-links">
-        <a class="btn btn-primary" href="mailto:cc3274@cornell.edu">cc3274@cornell.edu</a>
+        <a class="btn btn-primary" href="mailto:ccmm0403@gmail.com">ccmm0403@gmail.com</a>
         <a class="btn btn-ghost" href="https://github.com/cchen744" target="_blank" rel="noopener">github.com/cchen744</a>
         <a class="btn btn-ghost" href="https://www.linkedin.com/in/nora-chen-4711a330b/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
